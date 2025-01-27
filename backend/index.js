@@ -8,7 +8,7 @@ import Chat from "./models/chat.js";
 import UserChats from "./models/userChats.js";
 import { ClerkExpressRequireAuth } from "@clerk/clerk-sdk-node";
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 const app = express();
 
 const __filename = fileURLToPath(import.meta.url);
@@ -164,5 +164,5 @@ app.get("*", (req, res) => {
 
 app.listen(port, () => {
   connect();
-  console.log("Server running on 3000");
+  console.log("Server running on 8000");
 });
